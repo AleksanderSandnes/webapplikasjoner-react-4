@@ -1,0 +1,69 @@
+#beforeCreateTodo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+body {
+    overflow-y: scroll;
+}
+
+#createTodo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#createTodo > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+    z-index: 10;
+}
+
+#createTodo > div > p#feilmelding {
+    color: red;
+    padding-top: 20px;
+    display: none;
+}
+
+#createTodo > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+#createTodo > div > div > p.exit {
+    cursor: pointer;
+}
+
+#createTodo > div > form {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#createTodo > div > form > input, #createTodo > div > form > textarea {
+    padding: 10px;
+}
+
+#createTodo > div > form > input:not(:last-of-type), #createTodo > div > form > textarea {
+    margin-bottom: 10px;
+}
+
+#createTodo > div > form > label {
+    margin-bottom: 5px;
+}
+
+#createTodo > div > form > input:last-of-type {
+    border: none;
+    background-color: cadetblue;
+}
